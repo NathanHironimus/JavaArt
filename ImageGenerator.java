@@ -87,9 +87,7 @@ public class ImageGenerator {
     private void drawEllipse(int centerX, int centerY, int xRadius, int yRadius, Color color, Color gradientColor) {
         for (int row = centerY - yRadius; row <= centerY + yRadius; row++) {
             for (int col = centerX - xRadius; col <= centerX + xRadius; col++) {
-                if ((col - centerX) * (col - centerX) + (row - centerY) * (row - centerY) <= yRadius * yRadius) {
-                    image[row][col] = color; // Simplified for uniform color
-                }
+                
             }
         }
     }
